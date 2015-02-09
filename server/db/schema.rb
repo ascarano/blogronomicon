@@ -38,8 +38,7 @@ ActiveRecord::Schema.define(version: 20150209183907) do
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
